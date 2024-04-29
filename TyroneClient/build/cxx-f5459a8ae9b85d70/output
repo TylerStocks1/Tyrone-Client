@@ -1,0 +1,48 @@
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("3")
+HOST = Some("x86_64-pc-windows-msvc")
+CXX_x86_64-pc-windows-msvc = None
+CXX_x86_64_pc_windows_msvc = None
+HOST_CXX = None
+CXX = Some("cl.exe")
+CXXFLAGS_x86_64-pc-windows-msvc = None
+CXXFLAGS_x86_64_pc_windows_msvc = None
+HOST_CXXFLAGS = None
+CXXFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("crt-static,fxsr,sse,sse2")
+DEBUG = Some("false")
+CXX_x86_64-pc-windows-msvc = None
+CXX_x86_64_pc_windows_msvc = None
+HOST_CXX = None
+CXX = Some("cl.exe")
+CXXFLAGS_x86_64-pc-windows-msvc = None
+CXXFLAGS_x86_64_pc_windows_msvc = None
+HOST_CXXFLAGS = None
+CXXFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("crt-static,fxsr,sse,sse2")
+running: "cl.exe" "-nologo" "-MT" "-O2" "-Brepro" "-W4" "-FoF:/Programming/c++/ddnet/build\\release\\build\\cxx-f5459a8ae9b85d70\\out\\src/cxx.o" "-c" "src/cxx.cc"
+cxx.cc
+F:\VSC\VS\VC\Tools\MSVC\14.39.33519\include\ostream(549): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+F:\VSC\VS\VC\Tools\MSVC\14.39.33519\include\ostream(549): note: the template instantiation context (the oldest one first) is
+src/cxx.cc(288): note: see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+F:\VSC\VS\VC\Tools\MSVC\14.39.33519\include\ostream(541): note: while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::write(const _Elem *,std::streamsize)'
+        with
+        [
+            _Elem=char
+        ]
+src/cxx.cc(288): note: see the first reference to 'std::basic_ostream<char,std::char_traits<char>>::write' in 'rust::cxxbridge1::operator <<'
+exit code: 0
+AR_x86_64-pc-windows-msvc = None
+AR_x86_64_pc_windows_msvc = None
+HOST_AR = None
+AR = None
+running: "F:\\VSC\\VS\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX86\\x64\\lib.exe" "-out:F:/Programming/c++/ddnet/build\\release\\build\\cxx-f5459a8ae9b85d70\\out\\libcxxbridge1.a" "-nologo" "F:/Programming/c++/ddnet/build\\release\\build\\cxx-f5459a8ae9b85d70\\out\\src/cxx.o"
+exit code: 0
+cargo:rustc-link-lib=static=cxxbridge1
+cargo:rustc-link-search=native=F:/Programming/c++/ddnet/build\release\build\cxx-f5459a8ae9b85d70\out
+cargo:rerun-if-changed=src/cxx.cc
+cargo:rerun-if-changed=include/cxx.h
+cargo:rustc-cfg=built_with_cargo
+cargo:HEADER=C:\Users\genji\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cxx-1.0.71\include\cxx.h

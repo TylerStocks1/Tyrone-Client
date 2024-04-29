@@ -1,0 +1,3 @@
+cargo:rerun-if-env-changed=DDNET_TEST_LIBRARIES
+cargo:rerun-if-env-changed=DDNET_TEST_NO_LINK
+cargo:rerun-if-env-changed=RA_RUSTC_WRAPPER
